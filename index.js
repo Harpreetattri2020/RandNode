@@ -12,8 +12,6 @@ app.use(cors())
 
 
 
-
-
 //Get all Users Routes
 app.get("/", cors(), async(req,res)=>{
 
