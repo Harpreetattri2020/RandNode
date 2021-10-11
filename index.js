@@ -46,11 +46,8 @@ app.post("/create",cors(),async (req, res) => {
             email:email    
         }),
         
-    }).then(res=>{res.json()}).catch((err=>res.send(400).json("Some is Wrong")));
-    
-      return res.sendStatus(201).json("Successfully created new user");
-}
-
+    }).then(result=>{ return res.status(201).json(result)}).catch((err=>res.send(400).json("Some is Wrong")));
+    }
 catch(err){
     return res.sendStatus(500).json(err);
 }
