@@ -57,7 +57,7 @@ const Home = () => {
   const { users } = useSelector((state) => state.data);
   useEffect(() => {
     dispatch(loadUsers());
-  }, []);
+  }, [dispatch]);
 
   const handleDelete = (id) => {
     console.log("id", id);

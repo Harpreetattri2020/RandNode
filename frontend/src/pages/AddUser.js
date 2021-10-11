@@ -92,7 +92,7 @@ const AddUser = () => {
         <br />
         <TextField
           id="standard-basic"
-          label="DateofBirth"
+          label="DateofBirth(DD-MM-YYYY)"
           value={dateOfBirth}
           name="dateOfBirth"
           type="text"
